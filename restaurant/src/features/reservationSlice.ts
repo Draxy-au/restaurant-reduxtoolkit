@@ -6,7 +6,7 @@ interface ReservationState {
 }
 
 const initialState: ReservationState = {
-    value: []
+    value: ["Selena"]
 }
 
 export const reservationSlice = createSlice({
@@ -16,10 +16,13 @@ export const reservationSlice = createSlice({
         //typescript wants to know the type of action, toolkit has the type PayloadAction, and we use string
         addReservation: (state, action: PayloadAction<string>) => {
             state.value.push(action.payload)    
+        },
+        removeReservation: (state, action: PayloadAction<number>) => {
+            state.value.splice(action.payload, 1)    
         }
     }
 })
 
-export const { addReservation } = reservationSlice.actions;
+export const { addReservation, removeReservation } = reservationSlice.actions;
 
 export default reservationSlice.reducer;
