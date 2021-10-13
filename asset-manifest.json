@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/restaurant-reduxtoolkit/static/css/main.9bd0b6f5.chunk.css",
+    "main.js": "/restaurant-reduxtoolkit/static/js/main.a8d74f9b.chunk.js",
+    "main.js.map": "/restaurant-reduxtoolkit/static/js/main.a8d74f9b.chunk.js.map",
+    "runtime-main.js": "/restaurant-reduxtoolkit/static/js/runtime-main.3a9a5dd1.js",
+    "runtime-main.js.map": "/restaurant-reduxtoolkit/static/js/runtime-main.3a9a5dd1.js.map",
+    "static/js/2.29832454.chunk.js": "/restaurant-reduxtoolkit/static/js/2.29832454.chunk.js",
+    "static/js/2.29832454.chunk.js.map": "/restaurant-reduxtoolkit/static/js/2.29832454.chunk.js.map",
+    "static/js/3.2395bdcc.chunk.js": "/restaurant-reduxtoolkit/static/js/3.2395bdcc.chunk.js",
+    "static/js/3.2395bdcc.chunk.js.map": "/restaurant-reduxtoolkit/static/js/3.2395bdcc.chunk.js.map",
+    "index.html": "/restaurant-reduxtoolkit/index.html",
+    "static/css/main.9bd0b6f5.chunk.css.map": "/restaurant-reduxtoolkit/static/css/main.9bd0b6f5.chunk.css.map",
+    "static/js/2.29832454.chunk.js.LICENSE.txt": "/restaurant-reduxtoolkit/static/js/2.29832454.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3a9a5dd1.js",
+    "static/js/2.29832454.chunk.js",
+    "static/css/main.9bd0b6f5.chunk.css",
+    "static/js/main.a8d74f9b.chunk.js"
+  ]
+}
