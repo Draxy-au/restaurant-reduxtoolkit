@@ -3,13 +3,17 @@ import { useSelector, useDispatch } from "react-redux";
 import "./App.css";
 import { RootState } from "./app/store";
 import ReservationCard from "./components/ReservationCard";
+import CustomerCard from "./components/customerCard";
 import { addReservation } from "./features/reservationSlice";
 
 function App() {
-
   const [reservationNameInput, setReservationNameInput] = useState("");
 
-  const reservations = useSelector((state: RootState) => state.reservations.value);
+  const reservations = useSelector(
+    (state: RootState) => state.reservations.value
+  );
+
+  const customers = useSelector((state: RootState) => state.customers.value);
 
   const dispatch = useDispatch();
 
@@ -17,7 +21,7 @@ function App() {
     if (!reservationNameInput) return;
     dispatch(addReservation(reservationNameInput));
     setReservationNameInput("");
-  }
+  };
 
   return (
     <div className="App">
@@ -32,23 +36,17 @@ function App() {
             </div>
           </div>
           <div className="reservation-input-container">
-            <input 
-              value={reservationNameInput} onChange={(e) => setReservationNameInput(e.target.value)}
+            <input
+              value={reservationNameInput}
+              onChange={(e) => setReservationNameInput(e.target.value)}
             />
             <button onClick={hangleAddReservations}>Add</button>
           </div>
         </div>
         <div className="customer-food-container">
-          <div className="customer-food-card-container">
-            <p>Selena Gomez</p>
-            <div className="customer-foods-container">
-              <div className="customer-food"></div>
-              <div className="customer-food-input-container">
-                <input />
-                <button>Add</button>
-              </div>
-            </div>
-          </div>
+          {customers.map((customer) => {
+            return <CustomerCard id={customer.id} name={customer.name} food={customer.food} />;
+          })}
         </div>
       </div>
     </div>
