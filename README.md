@@ -1,4 +1,5 @@
-# restaurant-reduxtoolkit project
+Created with CRA --template typescript
 
-In this project I wanted to try out redux toolkit.
-It appears to simplify a lot of the steps when making a redux app.
+Going to try to use typescript where I can as I need to learn it.
+
+Following: https://www.youtube.com/watch?v=jR4fagDcvrc
